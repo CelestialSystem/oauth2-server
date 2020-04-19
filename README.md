@@ -59,35 +59,20 @@ vendor/bin/phpunit
 vendor/bin/phpstan analyse -l 7 -c phpstan.neon src tests
 ```
 
-## Continous Integration
+# Docker setup
+To build and start the service:
+```
+docker-compose up -d 
+```
+To stop the service:
+```
+docker-compose down 
+```
+To build again and start with a fresh container: 
+```
+docker-compose up -d --build --force-recreate 
+```
 
-We use [Travis CI](https://travis-ci.org/), [Scrutinizer](https://scrutinizer-ci.com/), and [StyleCI](https://styleci.io/) for continuous integration. Check out [our](https://github.com/thephpleague/oauth2-server/blob/master/.travis.yml) [configuration](https://github.com/thephpleague/oauth2-server/blob/master/.scrutinizer.yml) [files](https://github.com/thephpleague/oauth2-server/blob/master/.styleci.yml) if you'd like to know more.
-
-## Community Integrations
-
-* [Drupal](https://www.drupal.org/project/simple_oauth)
-* [Laravel Passport](https://github.com/laravel/passport)
-* [OAuth 2 Server for CakePHP 3](https://github.com/uafrica/oauth-server)
-* [OAuth 2 Server for Mezzio](https://github.com/mezzio/mezzio-authentication-oauth2)
-* [Trikoder OAuth 2 Bundle (Symfony)](https://github.com/trikoder/oauth2-bundle)
-
-## Changelog
-
-See the [project changelog](https://github.com/thephpleague/oauth2-server/blob/master/CHANGELOG.md)
-
-## Contributing
-
-Contributions are always welcome. Please see [CONTRIBUTING.md](https://github.com/thephpleague/oauth2-server/blob/master/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](https://github.com/thephpleague/oauth2-server/blob/master/CODE_OF_CONDUCT.md) for details.
-
-## Support
-
-Bugs and feature request are tracked on [GitHub](https://github.com/thephpleague/oauth2-server/issues).
-
-If you have any questions about OAuth _please_ open a ticket here; please **don't** email the address below.
-
-## Security
-
-If you discover any security related issues, please email `andrew@noexceptions.io` instead of using the issue tracker.
 
 ## License
 
