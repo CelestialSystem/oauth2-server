@@ -58,22 +58,6 @@ The library uses [PHPUnit](https://phpunit.de/) for unit tests and [PHPStan](htt
 vendor/bin/phpunit
 vendor/bin/phpstan analyse -l 7 -c phpstan.neon src tests
 ```
-
-# Docker setup
-To build and start the service:
-```
-docker-compose up -d 
-```
-To stop the service:
-```
-docker-compose down 
-```
-To build again and start with a fresh container: 
-```
-docker-compose up -d --build --force-recreate 
-```
-
-
 ## License
 
 This package is released under the MIT License. See the bundled [LICENSE](https://github.com/thephpleague/oauth2-server/blob/master/LICENSE) file for details.
